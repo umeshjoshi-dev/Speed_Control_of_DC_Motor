@@ -109,11 +109,11 @@ All waveforms were captured on an oscilloscope during hardware testing at Silico
 
 | | |
 |:---:|:---:|
-| ![Waveform 1](images/results/pwm_waveform_1.png) | ![Waveform 2](images/results/pwm_waveform_2.png) |
-| ![Waveform 3](images/results/pwm_waveform_3.png) | ![Waveform 4](images/results/pwm_waveform_4.png) |
-| ![Waveform 5](images/results/pwm_waveform_5.png) | ![Waveform 6](images/results/pwm_waveform_6.png) |
+| ![Waveform 1](images/results/pwm_waveform_5.png) | ![Waveform 2](images/results/pwm_waveform_7.png) |
+| ![Waveform 3](images/results/pwm_waveform_2.png) | ![Waveform 4](images/results/pwm_waveform_3.png) |
+| ![Waveform 5](images/results/pwm_waveform_4.png) | ![Waveform 6](images/results/pwm_waveform_1.png) |
 
-<img src="images/results/pwm_waveform_7.png" width="70%"/>
+<img src="images/results/pwm_waveform_6.png" width="70%"/>
 
 </div>
 
