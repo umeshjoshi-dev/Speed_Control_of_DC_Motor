@@ -50,47 +50,11 @@ Two user interfaces were implemented — a **potentiometer** for analog control 
 
 ## 🔁 System Architecture
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                       INPUT STAGE                           │
-│                                                             │
-│   ┌──────────────────┐          ┌──────────────────┐        │
-│   │  Potentiometer   │   (OR)   │   4×3 Keypad     │        │
-│   │  Analog Input    │          │   Digital Input   │        │
-│   └────────┬─────────┘          └────────┬─────────┘        │
-└────────────┼───────────────────────────── ┼────────────────-─┘
-             └──────────────┬───────────────┘
-                            │
-┌───────────────────────────▼─────────────────────────────────┐
-│                      CONTROL STAGE                          │
-│                                                             │
-│               ┌──────────────────────┐                      │
-│               │     Arduino UNO      │──────► 20×4 LCD      │
-│               │  PWM Generation      │        Duty Cycle %  │
-│               │  Speed Mapping       │        Voltage (V)   │
-│               │  Soft Start / Stop   │                      │
-│               └──────────┬───────────┘                      │
-└──────────────────────────┼──────────────────────────────────┘
-                           │ PWM Signal (5V logic)
-┌──────────────────────────▼──────────────────────────────────┐
-│                    ISOLATION STAGE                          │
-│                                                             │
-│               ┌──────────────────────┐                      │
-│               │  Gate Drive Circuit  │                      │
-│               │   (Optocoupler IC)   │                      │
-│               │  ✔ Isolates Control  │                      │
-│               │  ✔ Amplifies Signal  │                      │
-│               └──────────┬───────────┘                      │
-└──────────────────────────┼──────────────────────────────────┘
-                           │ Amplified Gate Signal
-┌──────────────────────────▼──────────────────────────────────┐
-│                      POWER STAGE                            │
-│                                                             │
-│  [230V DC] ──► [IGBT Switch] ──► [L–C Filter] ──► [Motor]  │
-│                     │                                │      │
-│              [Freewheeling Diode] ◄──────────────────┘      │
-└─────────────────────────────────────────────────────────────┘
-```
+<div align="center">
+
+<img src="images/circuit/system_architecture.png" width="100%"/>
+
+</div>
 
 ---
 
