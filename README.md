@@ -137,7 +137,7 @@ The system was tested in the industry lab at Silicon Control System, Dombivali. 
 
 | Hardware Photo 2 | Hardware Photo 3 |
 |:---:|:---:|
-| ![Hardware 2](images/hardware/hardware_2.jpg) | ![Hardware 3](images/hardware/hardware_3.jpg) |
+ ![Hardware 2](images/hardware/hardware_2.jpg) 
 
 ---
 
